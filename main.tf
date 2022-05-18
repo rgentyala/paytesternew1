@@ -1,7 +1,6 @@
 resource "ibm_pi_key" "key" {
   pi_cloud_instance_id = local.pid
   pi_key_name          = var.sshkeyname
-  pi_ssh_key           = var.sshkey
 }
 
 data "ibm_pi_key" "dskey" {
