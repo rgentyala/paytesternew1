@@ -34,7 +34,7 @@ variable "instance_name" {
   description = "The name to assign to the instance"
 }
 variable "sshkeyname" {
-  default     = "mykey"
+  default     = "pt_ssh"
   description = "Name of the ssh key to be used"
 }
 variable "processor_type" {
@@ -51,9 +51,4 @@ variable "network_name" {
   type        = string
   default     = "public-192_168_133_32-29-VLAN_2144"
   description = "The network ID or name to assign to the instance, as defined for the selected Power Systems Virtual Server CRN"
-}
-variable "sshkey" {
-  type        = string
-  default     = "pt_ssh"
-  description = "Public ssh key"
 }
